@@ -3,15 +3,15 @@ canvas=document.getElementById("myCanvas");
 ctx=canvas.getContext("2d");
 car_1_width=120;
 car_1_height=70;
-car_1_image="https://postimg.cc/9rqYz9HM";
+car_1_image="https://i.postimg.cc/9rqYz9HM/car1.png";
 car_1_x=10;
 car_1_y=10;
 car_2_width=120;
 car_2_height=70;
-car_2_image="https://postimg.cc/tnnW1Kff";
+car_2_image="https://i.postimg.cc/tnnW1Kff/car2.png";
 car_2_x=10;
 car_2_y=100;
-background_img="https://postimg.cc/bv5d35nK";
+background_img="https://i.postimg.cc/bv5d35nK/racing.jpg";
 //variables
 
 //events
@@ -65,4 +65,68 @@ if (keypressed=="87"){
 if (keypressed=="83"){
     car2_down();
 }
+}
+function car1_up(){
+    if (car_1_y >= 0){
+        car_1_y=car_1_y-10;
+        ub();
+        uc1();
+        uc2();
+    }
+}
+function car2_up(){
+    if (car_2_y >= 0){
+        car_2_y=car_2_y-10;
+        ub();
+        uc1();
+        uc2();
+    }
+}
+function car1_down(){
+    if (car_1_y <= 500){
+        car_1_y=car_1_y+10;
+        ub();
+        uc1();
+        uc2();
+    }
+}
+function car2_down(){
+    if (car_2_y <= 500){
+        car_2_y=car_2_y+10;
+        ub();
+        uc1();
+        uc2();
+    }
+}
+function car1_left(){
+    if (car_1_x >= 0){
+        car_1_x=car_1_x-10;
+        ub();
+        uc1();
+        uc2();
+    }
+}
+function car2_left(){
+    if (car_2_x >= 0){
+        car_2_x=car_2_x-10;
+        ub();
+        uc1();
+        uc2();
+    }
+}
+function car1_right(){
+    if (car_1_x <= 700){
+        car_1_x=car_1_x+10;
+        ub();
+        uc1();
+        uc2();
+    }
+}
+function car2_right(){
+    if (car_2_x <= 700){
+        car_2_x=car_2_x+10;
+        ub();
+        uc1();
+        uc2();
+    }
 }
